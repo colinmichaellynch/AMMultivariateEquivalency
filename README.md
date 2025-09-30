@@ -12,17 +12,23 @@ It is designed to support cost-effective qualification of AM processes by compar
   Partition multivariate space into bins for robust equivalency testing.
 - **Candidate process comparison**  
   Evaluate whether candidate datasets are statistically equivalent to the reference process.
-- **Driver script included**  
-  A minimal script (`run_equivalency.R`) demonstrates end-to-end usage.
 - **Step-by-step tutorial**  
   Includes a guided tutorial using simulated data to demonstrate how equivalency is determined.
 
 ---
 
-## Installation
+## Usage
 
-Clone this repository:
+1. Prepare your data
+- Place all functions from this package into the same directory.
+- Import your reference and candidate datasets into the same folder. 
+- Each CSV must contain only numeric columns (variables) and rows (artifacts).
+- Candidate datasets must use the same variables and ordering as the reference dataset.
 
-```bash
-git clone https://github.com/yourusername/AMMultivariateEquivalency.git
-cd AMMultivariateEquivalency
+2. Run scripts
+- Import reference and candidate datasets
+- binLimits.R will characterize each reference variable
+- multivaraiteProcessStability.R will produce a control chart to see if the reference and/or candidate datasets are stable
+- multivariateEquivalency.R will compare the reference
+- tutorial.R will show how the syntax for each of these scripts works. 
+
