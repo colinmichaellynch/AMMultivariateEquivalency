@@ -14,6 +14,8 @@ It is designed to support cost-effective qualification of AM processes by compar
   Evaluate whether candidate datasets are statistically equivalent to the reference process.
 - **Driver script included**  
   A minimal script (`run_equivalency.R`) demonstrates end-to-end usage.
+- **Step-by-step tutorial**  
+  Includes a guided tutorial using simulated data to demonstrate how equivalency is determined.
 
 ---
 
